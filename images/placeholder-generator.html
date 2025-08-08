@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Image Placeholders</title>
+    <style>
+        canvas { margin: 10px; border: 1px solid #ddd; }
+        .container { text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TheHeadChef Product Placeholders</h2>
+        <p>Right-click each image to save</p>
+        
+        <h3>Room Spray Bottle</h3>
+        <canvas id="spray" width="300" height="400"></canvas>
+        
+        <h3>Wax Melt Jar</h3>
+        <canvas id="wax" width="300" height="300"></canvas>
+        
+        <h3>Nasal Inhaler</h3>
+        <canvas id="inhaler" width="200" height="400"></canvas>
+    </div>
+
+    <script>
+        // Room Spray Bottle
+        const sprayCanvas = document.getElementById('spray');
+        const sprayCtx = sprayCanvas.getContext('2d');
+        
+        // Background
+        sprayCtx.fillStyle = '#f8f8f8';
+        sprayCtx.fillRect(0, 0, 300, 400);
+        
+        // Bottle body
+        sprayCtx.fillStyle = '#e6e6e6';
+        sprayCtx.fillRect(75, 100, 150, 250);
+        
+        // Bottle neck
+        sprayCtx.fillRect(125, 50, 50, 50);
+        
+        // Spray trigger
+        sprayCtx.fillStyle = '#d0d0d0';
+        sprayCtx.fillRect(175, 80, 40, 30);
+        
+        // Label area
+        sprayCtx.fillStyle = '#ffffff';
+        sprayCtx.fillRect(90, 150, 120, 80);
+        
+        // Text
+        sprayCtx.fillStyle = '#666';
+        sprayCtx.font = '12px Arial';
+        sprayCtx.textAlign = 'center';
+        sprayCtx.fillText('ROOM SPRAY', 150, 190);
+        sprayCtx.fillText('500ml', 150, 210);
+
+        // Wax Melt Jar
+        const waxCanvas = document.getElementById('wax');
+        const waxCtx = waxCanvas.getContext('2d');
+        
+        // Background
+        waxCtx.fillStyle = '#f8f8f8';
+        waxCtx.fillRect(0, 0, 300, 300);
+        
+        // Jar body
+        waxCtx.fillStyle = '#e6e6e6';
+        waxCtx.fillRect(50, 120, 200, 120);
+        
+        // Jar lid
+        waxCtx.fillStyle = '#d0d0d0';
+        waxCtx.fillRect(45, 100, 210, 25);
+        
+        // Label
+        waxCtx.fillStyle = '#ffffff';
+        waxCtx.fillRect(70, 140, 160, 60);
+        
+        // Text
+        waxCtx.fillStyle = '#666';
+        waxCtx.font = '14px Arial';
+        waxCtx.textAlign = 'center';
+        waxCtx.fillText('WAX MELTS', 150, 165);
+        waxCtx.fillText('6 pack', 150, 185);
+
+        // Nasal Inhaler
+        const inhalerCanvas = document.getElementById('inhaler');
+        const inhalerCtx = inhalerCanvas.getContext('2d');
+        
+        // Background
+        inhalerCtx.fillStyle = '#f8f8f8';
+        inhalerCtx.fillRect(0, 0, 200, 400);
+        
+        // Inhaler tube
+        inhalerCtx.fillStyle = '#e6e6e6';
+        inhalerCtx.fillRect(75, 50, 50, 300);
+        
+        // Cap
+        inhalerCtx.fillStyle = '#d0d0d0';
+        inhalerCtx.fillRect(70, 40, 60, 20);
+        
+        // Label
+        inhalerCtx.fillStyle = '#ffffff';
+        inhalerCtx.fillRect(80, 150, 40, 100);
+        
+        // Text
+        inhalerCtx.fillStyle = '#666';
+        inhalerCtx.font = '10px Arial';
+        inhalerCtx.textAlign = 'center';
+        inhalerCtx.fillText('NASAL', 100, 185);
+        inhalerCtx.fillText('INHALER', 100, 200);
+        inhalerCtx.fillText('5ml', 100, 220);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg width="200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="400" fill="#f8f8f8"/>
+  
+  <!-- Inhaler tube -->
+  <rect x="75" y="50" width="50" height="300" fill="#e6e6e6" stroke="#d0d0d0" stroke-width="1" rx="25"/>
+  
+  <!-- Cap -->
+  <rect x="70" y="40" width="60" height="20" fill="#d0d0d0" stroke="#c0c0c0" stroke-width="1" rx="10"/>
+  
+  <!-- Base -->
+  <rect x="70" y="340" width="60" height="20" fill="#d0d0d0" stroke="#c0c0c0" stroke-width="1" rx="10"/>
+  
+  <!-- Label -->
+  <rect x="80" y="150" width="40" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="2"/>
+  
+  <!-- Text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666" font-weight="bold">NASAL</text>
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666" font-weight="bold">INHALER</text>
+  <text x="100" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#999">5ml</text>
+  
+  <!-- Inhaler tip -->
+  <rect x="95" y="25" width="10" height="25" fill="#cccccc" rx="5"/>
+  
+  <!-- Air holes -->
+  <circle cx="90" cy="80" r="2" fill="#d0d0d0"/>
+  <circle cx="110" cy="80" r="2" fill="#d0d0d0"/>
+  <circle cx="90" cy="320" r="2" fill="#d0d0d0"/>
+  <circle cx="110" cy="320" r="2" fill="#d0d0d0"/>
+</svg>
